@@ -1,0 +1,162 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: Topics
+  version:
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+  - title: Getting started
+    output: web, pdf
+    folderitems:
+
+    - title: Overview
+      url: /index.html
+      output: web, pdf
+      type: homepage
+
+    - title: Importing data
+      url: /mydoc_gs_import.html
+      output: web, pdf
+
+    - title: Fitting data
+      url: /mydoc_gs_fit.html
+      output: web, pdf
+
+    - title: Analyzing data
+      url: /mydoc_gs_analyze.html
+      output: web, pdf
+
+    - title: Saving results
+      url: /mydoc_gs_save.html
+      output: web, pdf 
+
+  - title: Preprocessing data
+    output: web, pdf
+    folderitems:
+
+    - title: Managing data
+      url: /mydoc_managedatasets.html
+      output: web, pdf
+
+    - title: Viewing data
+      url: /mydoc_viewdata.html
+      output: web, pdf
+
+    - title: Excluding and sectioning data
+      url: /mydoc_excludesectiondata.html
+      output: web, pdf
+
+    - title: Smoothing data
+      url: /mydoc_smoothdata.html
+      output: web, pdf 
+
+    - title: Additonal preprocessing steps
+      url: /mydoc_preprocessdata.html
+      output: web, pdf 
+
+  - title: Fitting data
+    output: web, pdf
+    folderitems:
+
+    - title: Introduction
+      url: /mydoc_introfit.html
+      output: web, pdf
+
+    - title: Parametric fitting
+      url: /mydoc_parametricfit.html
+      output: web, pdf
+
+    - title: Nonparametric fitting
+      url: /mydoc_nonparametricfit.html
+      output: web, pdf
+
+  - title: Function reference
+    output: web, pdf
+    folderitems:
+
+    - title: cfit
+      url: /mydoc_cfit.html
+      output: web, pdf
+      type: homepage
+
+    - title: cflibhelp
+      url: /mydoc_cflibhelp.html
+      output: web, pdf
+
+    - title: cftool
+      url: /mydoc_cftool.html
+      output: web, pdf
+
+    - title: confint
+      url: /mydoc_confint.html
+      output: web, pdf
+
+    - title: datastats
+      url: /mydoc_datastats.html
+      output: web, pdf
+
+    - title: differentiate
+      url: /mydoc_differentiate.html
+      output: web, pdf
+
+    - title: disp
+      url: /mydoc_disp.html
+      output: web, pdf
+
+    - title: excludedata
+      url: /mydoc_excludedata.html
+      output: web, pdf
+
+    - title: feval
+      url: /mydoc_feval.html
+      output: web, pdf
+
+    - title: fit
+      url: /mydoc_fit.html
+      output: web, pdf
+
+    - title: fitoptions
+      url: /mydoc_fitoptions.html
+      output: web, pdf
+
+    - title: fittype
+      url: /mydoc_fittype.html
+      output: web, pdf
+
+    - title: get
+      url: /mydoc_get.html
+      output: web, pdf
+
+    - title: integrate
+      url: /mydoc_integrate.html
+      output: web, pdf
+
+    - title: plot
+      url: /mydoc_plot.html
+      output: web, pdf
+
+    - title: predint
+      url: /mydoc_predint.html
+      output: web, pdf
+
+    - title: set
+      url: /mydoc_set.html
+      output: web, pdf
+
+    - title: smooth
+      url: /mydoc_smooth.html
+      output: web, pdf
