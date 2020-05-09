@@ -72,10 +72,6 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Introduction
-      url: /mydoc_introfit.html
-      output: web, pdf
-
     - title: Parametric fitting
       url: /mydoc_parametricfit.html
       output: web, pdf
