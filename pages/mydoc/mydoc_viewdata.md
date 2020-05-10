@@ -2,8 +2,8 @@
 title: Viewing data
 tags:
 keywords:
-last_updated: May 6, 2020
-summary: "Viewing data."
+last_updated: May 9, 2020
+summary: "View data sets numerically and graphically."
 sidebar: mydoc_sidebar
 permalink: mydoc_viewdata.html
 folder: mydoc

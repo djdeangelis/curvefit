@@ -40,7 +40,7 @@ entries:
       url: /mydoc_gs_analyze.html
       output: web, pdf
 
-    - title: Saving results
+    - title: Saving your work
       url: /mydoc_gs_save.html
       output: web, pdf 
 
@@ -64,13 +64,17 @@ entries:
       url: /mydoc_smoothdata.html
       output: web, pdf 
 
-    - title: Additonal preprocessing steps
+    - title: More preprocessing steps
       url: /mydoc_preprocessdata.html
       output: web, pdf 
 
   - title: Fitting data
     output: web, pdf
     folderitems:
+
+    - title: Overview
+      url: /mydoc_fit_overview.html
+      output: web, pdf
 
     - title: Parametric fitting
       url: /mydoc_parametricfit.html

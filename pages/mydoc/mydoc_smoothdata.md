@@ -3,7 +3,7 @@ title: Smoothing data
 tags:
 keywords:
 last_updated: May 6, 2020
-summary: "Smoothing data."
+summary: "Apply a smoothing algorithm to noisy data."
 sidebar: mydoc_sidebar
 permalink: mydoc_smoothdata.html
 folder: mydoc

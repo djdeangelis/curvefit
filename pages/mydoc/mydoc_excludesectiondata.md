@@ -2,8 +2,8 @@
 title: Excluding and sectioning data
 tags:
 keywords:
-last_updated: May 6, 2020
-summary: "Excluding and sectioning data."
+last_updated: May 9, 2020
+summary: "Remove data points individually or by defining a window."
 sidebar: mydoc_sidebar
 permalink: mydoc_excludesectiondata.html
 folder: mydoc

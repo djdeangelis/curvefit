@@ -2,8 +2,8 @@
 title: Importing data
 tags:
 keywords:
-last_updated: May 5, 2020
-summary: "Import workspace data."
+last_updated: May 9, 2020
+summary: "Import data into the workspace and load into the tool."
 sidebar: mydoc_sidebar
 permalink: mydoc_gs_import.html
 folder: mydoc

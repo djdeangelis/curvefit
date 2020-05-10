@@ -2,8 +2,8 @@
 title: Nonparametric fitting
 tags:
 keywords:
-last_updated: May 6, 2020
-summary: "Nonparametric fitting."
+last_updated: May 9, 2020
+summary: "Fit data using various nonparametric methods."
 sidebar: mydoc_sidebar
 permalink: mydoc_nonparametricfit.html
 folder: mydoc
@@ -60,7 +60,7 @@ Interpolants are defined as piecewise polynomials since the fitted curve is cons
 
 Parametric polynomial fits result in a global fit where one set of fitted coefficients describes the entire data set. As a result, the fit can be erratic. Since piecewise polynomials always produce a smooth fit, they are more flexible than parametric polynomials and can be effectively used for a wider range of data sets.
 
-## Smoothing Spline
+## Smoothing spline
 If your data is noisy, then you may want to fit it using a smoothing spline. Alternatively, you can use one of the smoothing methods described in [Smoothing data][mydoc_smoothdata].
 
 The smoothing spline $$s$$ is constructed for the specified smoothing parameter $$p$$ and the specified weights $$w_{i}$$, and minimizes the function:

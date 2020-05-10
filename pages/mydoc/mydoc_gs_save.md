@@ -2,8 +2,8 @@
 title: Saving your work
 tags:
 keywords:
-last_updated: May 5, 2020
-summary: "Save your fit results."
+last_updated: May 9, 2020
+summary: "Save all of your work to a binary file or a script file."
 sidebar: mydoc_sidebar
 permalink: mydoc_gs_save.html
 folder: mydoc

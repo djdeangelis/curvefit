@@ -2,8 +2,8 @@
 title: Managing data sets
 tags:
 keywords:
-last_updated: May 6, 2020
-summary: "Managing data sets."
+last_updated: May 9, 2020
+summary: "Import and preview data sets."
 sidebar: mydoc_sidebar
 permalink: mydoc_managedatasets.html
 folder: mydoc

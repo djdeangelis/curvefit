@@ -4,7 +4,7 @@ keywords:
 tags:
 sidebar: mydoc_sidebar
 permalink: index.html
-summary: Overview of the Curve Fitting Tool.
+summary: "Overview of features, environment, and workflow."
 ---
 ## Introduction
 The Curve Fitting Tool is a collection of graphical user interfaces (GUIs) and script functions built on a full-featured scientific computing platform. The tool provides you with these core features:
@@ -17,7 +17,7 @@ The Curve Fitting Tool is a collection of graphical user interfaces (GUIs) and s
 * Fit statistics to assist you in determining the goodness of fit.
 * A graphical environment that allows you to:
   * Explore and analyze data sets and fits both visually and numerically.
-  * Save your work in various formats including M-files, binary files, and workspace variables.
+  * Save your work in various formats including script files, binary files, and workspace variables.
 
 ## Exploring the environment
 The Curve Fitting Tool consists of two different environments: a graphical environment and a command line environment. Although the two environments are functionally equivalent, you generally cannot mix the two when performing a given curve fitting task. 
@@ -50,8 +50,8 @@ help function_name
 
 {% include note.html content="You can change the way any toolbox function works by copying and renaming the script file, and then modifying your copy. However, these changes will not be reflected in the graphical environment." %}
 
-### Example data sets
-To help you learn how to use the Curve Fitting Tool, several data sets of measured and gennerated data are provided.
+## Example data sets
+To help you learn how to use the Curve Fitting Tool, several data sets of measured and generated data are provided. Some of these data sets are used in the examples included in this guide.
 
 <table>
 <colgroup>

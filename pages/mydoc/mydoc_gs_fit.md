@@ -2,8 +2,8 @@
 title: Fitting data
 tags:
 keywords:
-last_updated: May 6, 2020
-summary: "Fit data using various library functions."
+last_updated: May 9, 2020
+summary: "Fit data using a library function and then evaluate the fit results."
 sidebar: mydoc_sidebar
 permalink: mydoc_gs_fit.html
 folder: mydoc
@@ -79,7 +79,7 @@ You normalize data with the Fitting GUI by selecting the **Center and scale X da
 
 {% include note.html content="Since the predictor data changes after normalizing, the values of the fitted coefficients also change when compared to the original data. However, the functional form of the data and the resulting goodness of fit statistics do not change. Additionally, the data is displayed using the original scale." %}
 
-## Determining the Best Fit
+## Determining the best fit
 To determine the best fit, you examine both the graphical and numerical fit results.
 
 ### Graphical fit results
@@ -125,7 +125,7 @@ The p1, p2, and p3 coefficients for the fifth degree polynomial suggest that it 
 
 {% include note.html content="The fitted coefficients associated with the constant, linear, and quadratic terms are nearly identical for each polynomial equation. However, as the polynomial degree increases, the coefficient bounds associated with the higher degree terms indicate that the fitted values are not known accurately, which suggests overfitting." %}
 
-## Saving the fit Rresults
+## Saving the fit results
 By pressing the **Save to workspace** button, you can save one or more fits and the associated fit results to the workspace. The fits are saved as an object and the associated fit results are saved as structures. This example saves all the fit results for the best fit, poly2.
 
 {% include image.html file="save_fit.gif" %}

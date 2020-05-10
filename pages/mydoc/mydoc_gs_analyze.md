@@ -1,9 +1,9 @@
 ---
-title: Analyzing fit results
+title: Analyzing your work
 tags:
 keywords: 
-last_updated: May 5, 2020
-summary: "Analyze fit results."
+last_updated: May 9, 2020
+summary: "Extrapolate the fit results and save the analysis results."
 sidebar: mydoc_sidebar
 permalink: mydoc_gs_analyze.html
 folder: mydoc
@@ -19,7 +19,7 @@ By selecting the **Plot results** and **Plot data set** check boxes, and pressin
 
 {% include image.html file="extrap1_.gif" %}
 
-## Saving the Analysis Results
+## Saving the analysis results
 Press the **Save to workspace** button to save the extrapolated values as a structure to the workspace.
 
 {% include image.html file="save_ana.gif" %}

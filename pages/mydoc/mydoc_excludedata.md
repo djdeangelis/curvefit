@@ -3,7 +3,7 @@ title: excludedata
 tags:
 keywords:
 last_updated: May 4, 2020
-summary: "Display descriptive information for curve fitting objects."
+summary: "Specify data to be excluded from a fit."
 sidebar: mydoc_sidebar
 permalink: mydoc_excludedata.html
 folder: mydoc
