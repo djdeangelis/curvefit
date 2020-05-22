@@ -373,4 +373,88 @@ The fit is an improvement over the previous two fits, and appears to account for
 
 In conclusion, Fourier analysis of the data reveals three significant cycles. The annual cycle is the strongest, but cycles with periods of approximately 44 and 22 months are also present. These cycles correspond to El Nino and the Southern Oscillation (ENSO).
 
+## Example: Legendre polynomial fit
+This example fits data using several custom linear equations. The data is generated and is based on the nuclear reaction $$^{12}C(e,e'\alpha)^{8}Be$$. The equations use sums of Legendre polynomial terms.
+
+Consider an experiment in which 124 MeV electrons are scattered from <sup>12</sup>C nuclei. In the subsequent reaction, alpha particles are emitted and produce the residual nuclei <sup>8</sup>Be. By analyzing the number of alpha particles emitted as a function of angle, you can deduce certain information regarding the dynamics of <sup>12</sup>C. The reaction kinematics are shown below.
+
+{% include image.html file="ch_fit97.gif" %}
+
+where:
+* e is the incident electron
+* <sup>12</sup>C is the carbon target
+* q is the momentum transfer
+* e$$^{\prime}$$ is the scattered electron
+* $$\alpha$$ is the emitted alpha particle
+* $$\theta_{e^{\prime}}$$ is the electron scattering angle
+* $$\theta_{\alpha^{\prime}}$$ is the alpha scattering angle
+
+The data is collected by placing solid state detectors at values of $$\theta_{\alpha}$$ ranging from $$10^{\circ}$$ to $$240^{\circ}$$ in $$10^{\circ}$$ increments.
+
+It is sometimes useful to describe a variable expressed as a function of angle in terms of Legendre polynomials:
+
+$$y(x) = \sum_{n=0}^{\infty}a_{n}P_{n}(x)$$
+
+where $$P_{n}(x)$$ is a Legendre polynomial of degree $$n$$, $$x$$ is $$\cos(\theta_{\alpha})$$, and $$a_{n}$$ are the coefficients of the fit.
+
+For the alpha emission data, you can directly associate the coefficients with the nuclear dynamics by invoking a theoretical model. Additionally, the theoretical model introduces constraints for the infinite sum shown above. In particular, by considering the angular momentum of the reaction, a fourth degree Legendre polynomial using only even terms should describe the data effectively.
+
+You can generate Legendre polynomials with Rodrigues' formula.
+
+$$P_n(x) = {1 \over 2{^n}n!}\left( {d \over dx}\right)^{n}(x^{2} -1)^{n}$$
+
+The Legendre polynomials up to fourth degree are given below.
+
+|**n**|**$$P_n(x)$$**|
+|0|1|
+|1|x|
+|2|$$(1/2)(3x^{2}-1)$$|
+|3|$$(1/2)(5x^{3}-3x)$$|
+|4|$$(1/8)(35x^{4}-30x^{2}+3)$$|
+
+The first step is to load the <sup>12</sup>C alpha emission data from the `carbon12alpha` file.
+
+```
+load carbon12alpha
+```
+
+The workspace contains two new variables:
+
+* `angle` is a vector of angles (in radians) ranging from $$10^{\circ}$$ to $$240^{\circ}$$ in $$10^{\circ}$$ increments.
+* `counts` is a vector of raw alpha particle counts that correspond to the emission angles in `angle`.
+
+Load these two variables into the Curve Fitting Tool and name the data set `C12Alpha`.
+
+The **Fit Editor** for a custom equation fit type is shown below.
+
+{% include image.html file="ch_fi10a.gif" %}
+
+Fit the data using a fourth degree Legendre polynomial with only even terms.
+
+$$y_1(x) = a_0 + a_2{\left(1 \over 2\right)}(3x^{2}-1) + a_4{\left(1 \over 8\right)}(35x^{4}-30x^{2}+3)$$
+
+Since the Legendre polynomials depend only on the predictor variable and constants, you use the **Linear Equations** tab on the Create Custom Equation GUI. This tab is shown below for the model given by $$y_1(x)$$. Note that since the angle is given in radians, the argument of the Legendre terms is given by $$cos(\theta_{\alpha})$$.
+
+{% include image.html file="ch_fit29.gif" %}
+
+The fit and residuals are shown below. The fit appears to follow the trend of the data well, while the residuals appear to be randomly distributed and do not exhibit any systematic behavior.
+
+{% include image.html file="cftool_f.gif" %}
+
+The numerical fit results are shown below. The 95% confidence bounds indicate that the coefficients associated with $$P_0(x)$$ and $$P_4(x)$$ are known fairly accurately, but that the $$P_2(x)$$ coefficient has a relatively large uncertainty.
+
+{% include image.html file="ch_fit36.gif" %}
+
+To confirm the theoretical argument that the alpha-emission data is best described by a fourth degree Legendre polynomial with only even terms, fit the data using both even and odd terms.
+
+$$y_2(x) = y_1(x) + a_3 {\left(1 \over 2\right)}(5x^{3}-3x)$$
+
+The **Linear Equations** tab of the Create Custom Equation GUI is shown below for the model given by $$y_2(x)$$.
+
+{% include image.html file="ch_fit41.gif" %}
+
+The numerical results indicate that the odd Legendre terms do not contribute significantly to the fit, and the even Legendre terms are essentially unchanged from the previous fit. This confirms that the initial model choice is best.
+
+{% include image.html file="ch_fi49a.gif" %}
+
 {% include links.html %}
