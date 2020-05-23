@@ -374,24 +374,15 @@ The fit is an improvement over the previous two fits, and appears to account for
 In conclusion, Fourier analysis of the data reveals three significant cycles. The annual cycle is the strongest, but cycles with periods of approximately 44 and 22 months are also present. These cycles correspond to El Nino and the Southern Oscillation (ENSO).
 
 ## Example: Legendre polynomial fit
-This example fits data using several custom linear equations. The data is generated and is based on the nuclear reaction $$^{12}C(e,e'\alpha)^{8}Be$$. The equations use sums of Legendre polynomial terms.
+This example fits generated data using several custom linear equations. The data is based on the nuclear reaction $$^{12}C(e,e'\alpha)^{8}Be$$ and the equations use sums of Legendre polynomial terms.
 
-Consider an experiment in which 124 MeV electrons are scattered from <sup>12</sup>C nuclei. In the subsequent reaction, alpha particles are emitted and produce the residual nuclei <sup>8</sup>Be. By analyzing the number of alpha particles emitted as a function of angle, you can deduce certain information regarding the dynamics of <sup>12</sup>C. The reaction kinematics are shown below.
+Consider an experiment in which electrons are scattered from <sup>12</sup>C nuclei. In the subsequent reaction, alpha particles are emitted and produce the residual nuclei <sup>8</sup>Be. By analyzing the number of alpha particles emitted as a function of angle, you can deduce certain information regarding the dynamics of <sup>12</sup>C. The reaction kinematics are shown below.
 
 {% include image.html file="ch_fit97.gif" %}
 
-where:
-* e is the incident electron
-* <sup>12</sup>C is the carbon target
-* q is the momentum transfer
-* e$$^{\prime}$$ is the scattered electron
-* $$\alpha$$ is the emitted alpha particle
-* $$\theta_{e^{\prime}}$$ is the electron scattering angle
-* $$\theta_{\alpha^{\prime}}$$ is the alpha scattering angle
+where e is the incident electron, <sup>12</sup>C is the carbon target, q is the momentum transfer, e$$^{\prime}$$ is the scattered electron, $$\alpha$$ is the emitted alpha particle, $$\theta_{e^{\prime}}$$ is the electron scattering angle, and $$\theta_{\alpha^{\prime}}$$ is the alpha scattering angle.
 
-The data is collected by placing solid state detectors at values of $$\theta_{\alpha}$$ ranging from $$10^{\circ}$$ to $$240^{\circ}$$ in $$10^{\circ}$$ increments.
-
-It is sometimes useful to describe a variable expressed as a function of angle in terms of Legendre polynomials:
+You can describe a variable expressed as a function of angle in terms of Legendre polynomials:
 
 $$y(x) = \sum_{n=0}^{\infty}a_{n}P_{n}(x)$$
 
@@ -437,7 +428,7 @@ Since the Legendre polynomials depend only on the predictor variable and constan
 
 {% include image.html file="ch_fit29.gif" %}
 
-The fit and residuals are shown below. The fit appears to follow the trend of the data well, while the residuals appear to be randomly distributed and do not exhibit any systematic behavior.
+The fit and residuals are shown below. The fit appears to follow the trend of the data, while the residuals appear to be randomly distributed and do not exhibit any systematic behavior.
 
 {% include image.html file="cftool_f.gif" %}
 
